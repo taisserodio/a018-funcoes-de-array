@@ -10,4 +10,16 @@ const produtos = [
     { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
- 
+
+//  # Exercício 3
+
+// Dado um array de produtos, onde cada produto é um objeto com nome, preço e categoria, 
+// retorne um novo array com o nome dos produtos da categoria Limpeza.
+
+
+//o filter vai filtrar qual elemento eu quero do array de produtos , ai eu crio o pareametro
+//que seria nesse caso mercado, o sinal de => signifca que estou usando a função                          
+const categoriaLimpeza = produtos.filter((mercado)=>
+//=== significa que eu quero verificar se a categoria do meu produto é igual a limpeza
+mercado.categoria === "Limpeza") //o filter vai filtrar qual elemento eu quero do array de produtos
+console.log("Os produtos da categoria de limpeza são :" , categoriaLimpeza)
